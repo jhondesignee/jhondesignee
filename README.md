@@ -1,16 +1,16 @@
-### Hi there 👋
+# Jhon Designee
 
-<!--
-**jhondesignee/jhondesignee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img style="display: block; margin: 20px 0; width: 300px; aspect-ratio: 1; border-radius: 10px; border: 1px solid grey" alt="Profile picture" src="https://github.com/jhondesignee.png">
 
-Here are some ideas to get you started:
+- 😃 Jhonata
+- 🎉 18 yo
+- 👨‍💻 Web developer
+- 🇧🇷 Brasileiro
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Focado em experiência no mobile
+
+<img style="display: block" alt="Github stats" src="https://github-readme-stats.vercel.app/api/top-langs?username=jhondesignee&layout=compact&custom_title=Linguagens+mais+usadas&border_radius=10&bg_color=DEG,800080,4b0082&title_color=fff&text_color=fff&border_color=808080">
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/guy.named.princess)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/message/O2NSJ44ZIVUEF1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jhondesignee)

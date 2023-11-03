@@ -4,7 +4,7 @@
   😃 Jhonata <br>
   🎉 18 yo <br>
   👨‍💻 Web developer <br>
-  🇧🇷 Brasileiro
+  🇧🇷 Brasileiro 
 </p>
 
 <p align="center"><em>Focado em experiência no mobile</em></p>

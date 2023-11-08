@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Gerador de link WhatsApp",
+    "description": "Gera links para seu número do WhatsApp",
+    "component": "wa-link-generator",
+    "path": "../../whatsapp-link-generator"
+  }
+]

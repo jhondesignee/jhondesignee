@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     typescript: { typeCheck: true }
   },
   modules: ["@invictus.codes/nuxt-vuetify"],
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   extends: [...projectsList],
   vuetify: {
     vuetifyOptions: {

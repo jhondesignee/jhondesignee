@@ -6,7 +6,7 @@
         <template #activator="{ props }">
           <v-btn icon="mdi-dots-vertical" v-bind="props"></v-btn>
         </template>
-        <v-card>
+        <v-card class="rounded-lg">
           <v-list>
             <v-list-subheader>Socials</v-list-subheader>
             <v-list-item v-for="social in socials" :href="social.url" target="_blank">
@@ -19,7 +19,7 @@
           <v-divider />
           <v-list>
             <v-list-subheader>Projects</v-list-subheader>
-            <v-list-item v-for="project in projects" :to="'projects/' + project.component">
+            <v-list-item v-for="project in projects" :to="'/projects/' + project.component">
               <v-list-item-title>{{ project.title }}</v-list-item-title>
             </v-list-item>
           </v-list>

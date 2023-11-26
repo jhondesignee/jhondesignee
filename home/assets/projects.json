@@ -2,7 +2,7 @@
   {
     "title": "Gerador de link WhatsApp",
     "description": "Gera links para seu número do WhatsApp",
-    "component": "wa-link-generator",
-    "path": "github:jhondesignee/whatsapp-link-generator"
+    "path": "wa-link-generator",
+    "extends": null
   }
 ]

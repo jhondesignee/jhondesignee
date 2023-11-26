@@ -1,7 +1,15 @@
 <template>
   <v-app>
     <v-app-bar color="primary">
-      <v-app-bar-title @click="$router.replace('/')">Jhon Designee</v-app-bar-title>
+      <v-app-bar-title @click="$router.replace('/')">
+        <v-avatar>
+          <v-img
+            aspect-ratio="1/1"
+            src="https://raw.githubusercontent.com/jhondesignee/jhondesignee/main/transparent-logo.png"
+          ></v-img>
+        </v-avatar>
+        Jhon Designee
+      </v-app-bar-title>
       <v-menu>
         <template #activator="{ props }">
           <v-btn icon="mdi-dots-vertical" v-bind="props"></v-btn>
@@ -9,7 +17,11 @@
         <v-card class="rounded-lg">
           <v-list>
             <v-list-subheader>Socials</v-list-subheader>
-            <v-list-item v-for="social in socials" :href="social.url" target="_blank">
+            <v-list-item
+              v-for="social in socials"
+              :href="social.url"
+              target="_blank"
+            >
               <template #prepend>
                 <v-icon>{{ social.icon }}</v-icon>
               </template>
@@ -19,7 +31,11 @@
           <v-divider />
           <v-list>
             <v-list-subheader>Projects</v-list-subheader>
-            <v-list-item v-for="project in projects" :to="'/projects/' + project.component">
+            <v-list-item
+              v-for="project in projects"
+              :to="resolveProjectPath(project.path)"
+              color="accent"
+            >
               <v-list-item-title>{{ project.title }}</v-list-item-title>
             </v-list-item>
           </v-list>

@@ -144,4 +144,14 @@
   const inputMessage = ref<string>()
   const outputUrl = ref<string>()
   const outputUrlIcon = ref<string>(outputIcons.copy)
+
+  useSeoMeta({
+    title: "Gerador de link WhatsApp %separator %pageName",
+    ogTitle: "Gerador de link WhatsApp %separator %pageName",
+    twitterTitle: "Gerador de link WhatsApp %separator %pageName",
+    description: "Gera links para seu número do WhatsApp",
+    ogDescription: "Gera links para seu número do WhatsApp",
+    twitterDescription: "Gera links para seu número do WhatsApp",
+    ogUrl: "https://jhondesignee.netlify.app/projects/wa-link-generator"
+  })
 </script>

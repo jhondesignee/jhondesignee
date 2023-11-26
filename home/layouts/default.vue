@@ -17,11 +17,7 @@
         <v-card class="rounded-lg">
           <v-list>
             <v-list-subheader>Socials</v-list-subheader>
-            <v-list-item
-              v-for="social in socials"
-              :href="social.url"
-              target="_blank"
-            >
+            <v-list-item v-for="social in socials" :href="social.url" target="_blank">
               <template #prepend>
                 <v-icon>{{ social.icon }}</v-icon>
               </template>
@@ -52,4 +48,33 @@
 <script lang="ts" setup>
   import socials from "assets/socials.json"
   import projects from "assets/projects.json"
+
+  useHead({
+    templateParams: {
+      separator: "¦",
+      pageName: "Jhon Designee"
+    },
+    htmlAttrs: { lang: "pt-br" },
+    link: [
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "https://raw.githubusercontent.com/jhondesignee/jhondesignee/61c714de4a34f418f880117c705a22c125b30cc2/logo.png"
+      }
+    ]
+  })
+  useSeoMeta({
+    title: "Home %separator %pageName",
+    ogTitle: "Home %separator %pageName",
+    twitterTitle: "Home %separator %pageName",
+    description: "things",
+    ogDescription: "things",
+    twitterDescription: "things",
+    ogImage:
+      "https://raw.githubusercontent.com/jhondesignee/jhondesignee/61c714de4a34f418f880117c705a22c125b30cc2/logo.png",
+    twitterImage:
+      "https://raw.githubusercontent.com/jhondesignee/jhondesignee/61c714de4a34f418f880117c705a22c125b30cc2/logo.png",
+    twitterCard: "summary_large_image",
+    ogUrl: "https://jhondesignee.netlify.app"
+  })
 </script>

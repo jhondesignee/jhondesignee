@@ -146,9 +146,9 @@
   const outputUrlIcon = ref<string>(outputIcons.copy)
 
   useSeoMeta({
-    title: "Gerador de link WhatsApp",
-    ogTitle: "Gerador de link WhatsApp",
-    twitterTitle: "Gerador de link WhatsApp",
+    title: "Gerador de link WhatsApp %separator %pageName",
+    ogTitle: "Gerador de link WhatsApp %separator %pageName",
+    twitterTitle: "Gerador de link WhatsApp %separator %pageName",
     description: "Gera links para seu número do WhatsApp",
     ogDescription: "Gera links para seu número do WhatsApp",
     twitterDescription: "Gera links para seu número do WhatsApp",

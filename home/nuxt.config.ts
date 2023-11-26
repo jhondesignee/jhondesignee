@@ -2,6 +2,7 @@ import type { ThemeDefinition } from "vuetify"
 // no types for 'colors'
 // @ts-ignore
 import colors from "vuetify/lib/util/colors"
+import { aliases, mdi } from "vuetify/iconsets/mdi"
 import projects from "./assets/projects.json"
 import { nodePolyfills } from "vite-plugin-node-polyfills"
 
@@ -48,6 +49,11 @@ export default defineNuxtConfig({
   },
   vuetify: {
     vuetifyOptions: {
+      icons: {
+        defaultSet: "mdi",
+        aliases,
+        sets: { mdi }
+      },
       theme: {
         defaultTheme: "purpleDarkTheme",
         themes: { purpleDarkTheme }

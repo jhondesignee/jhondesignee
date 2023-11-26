@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
   modules: ["@invictus.codes/nuxt-vuetify"],
   extends: projectsList,
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   vite: {
     plugins: [
       nodePolyfills({

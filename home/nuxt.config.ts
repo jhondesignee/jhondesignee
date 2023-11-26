@@ -1,7 +1,9 @@
 import type { ThemeDefinition } from "vuetify"
+// no types for 'colors'
 // @ts-ignore
 import colors from "vuetify/lib/util/colors"
 import projects from "./assets/projects.json"
+import { nodePolyfills } from "vite-plugin-node-polyfills"
 
 const purpleDarkTheme: ThemeDefinition = {
   dark: true,
@@ -13,7 +15,9 @@ const purpleDarkTheme: ThemeDefinition = {
     accent: colors.lightBlue.accent3
   }
 }
-const projectsList = projects.map(project => project.path)
+const projectsList = projects
+  .map(project => project.extends)
+  .filter(extend => typeof extend === "string") as unknown as Array<string>
 
 export default defineNuxtConfig({
   $development: {
@@ -30,8 +34,18 @@ export default defineNuxtConfig({
     typescript: { typeCheck: true }
   },
   modules: ["@invictus.codes/nuxt-vuetify"],
-  devtools: { enabled: true },
-  extends: [...projectsList],
+  extends: projectsList,
+  devtools: { enabled: false },
+  vite: {
+    plugins: [
+      nodePolyfills({
+        include: ["path"],
+        globals: {
+          process: false
+        }
+      })
+    ]
+  },
   vuetify: {
     vuetifyOptions: {
       theme: {

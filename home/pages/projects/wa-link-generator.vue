@@ -4,7 +4,7 @@
       <v-autocomplete
         class="mb-1"
         label="País"
-        no-data-text="País não encontrado"
+        :no-data-text="inputErrorMessages.notFound"
         variant="outlined"
         color="accent"
         :items="countryItems"
@@ -111,7 +111,8 @@
 
   const inputErrorMessages = {
     required: "Campo requerido",
-    invalidPhoneNumber: "Número de telefone inválido"
+    invalidPhoneNumber: "Número de telefone inválido",
+    notFound: "País não encontrado"
   }
   const whatsappUrlData = {
     base: "https://wa.me",

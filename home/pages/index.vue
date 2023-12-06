@@ -8,6 +8,4 @@
 </template>
 <script lang="ts" setup>
   import projects from "assets/projects.json"
-
-  
 </script>

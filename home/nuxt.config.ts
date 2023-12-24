@@ -31,16 +31,8 @@ export default defineNuxtConfig({
     },
     typescript: { typeCheck: true }
   },
-  modules: ["@invictus.codes/nuxt-vuetify"],
+  modules: ["@invictus.codes/nuxt-vuetify", "nuxt-mongoose"],
   devtools: { enabled: false },
-  runtimeConfig: {
-    mongodbUri: process.env.MONGODB_URI
-  },
-  hooks: {
-    close: () => {
-      mongoose.disconnect()
-    }
-  },
   vite: {
     plugins: [
       nodePolyfills({

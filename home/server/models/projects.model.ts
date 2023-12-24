@@ -1,9 +1,7 @@
-import { Schema, model } from "mongoose"
+import { defineMongooseModel } from "#nuxt/mongoose"
 
-const projectSchema = new Schema({
+export const ProjectsSchema = defineMongooseModel("Projects", {
   title: String,
   description: String,
   path: String
 })
-
-export default model("Projects", projectSchema)

@@ -15,6 +15,7 @@
     "@mdi/font": "^7.3.67",
     "@nuxt/devtools": "^1.0.3",
     "nuxt": "^3.8.2",
+    "nuxt-mongoose": "^1.0.3",
     "sass": "^1.69.5",
     "typescript": "^5.3.2",
     "vite": "^5.0.2",
@@ -27,7 +28,6 @@
     "@vercel/kv": "^1.0.1",
     "countries-list": "^3.0.6",
     "libphonenumber-js": "^1.10.51",
-    "maska": "^2.1.10",
-    "mongoose": "^8.0.3"
+    "maska": "^2.1.10"
   }
 }

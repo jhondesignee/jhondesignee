@@ -3,8 +3,8 @@ import type { ThemeDefinition } from "vuetify"
 // @ts-ignore
 import colors from "vuetify/lib/util/colors"
 import { aliases, mdi } from "vuetify/iconsets/mdi"
-import projects from "./assets/projects.json"
 import { nodePolyfills } from "vite-plugin-node-polyfills"
+import mongoose from "mongoose"
 
 const purpleDarkTheme: ThemeDefinition = {
   dark: true,
@@ -16,9 +16,6 @@ const purpleDarkTheme: ThemeDefinition = {
     accent: colors.lightBlue.accent3
   }
 }
-const projectsList = projects
-  .map(project => project.extends)
-  .filter(extend => typeof extend === "string") as unknown as Array<string>
 
 export default defineNuxtConfig({
   $development: {
@@ -35,8 +32,15 @@ export default defineNuxtConfig({
     typescript: { typeCheck: true }
   },
   modules: ["@invictus.codes/nuxt-vuetify"],
-  extends: projectsList,
-  devtools: { enabled: true },
+  devtools: { enabled: false },
+  runtimeConfig: {
+    mongodbUri: process.env.MONGODB_URI
+  },
+  hooks: {
+    close: () => {
+      mongoose.disconnect()
+    }
+  },
   vite: {
     plugins: [
       nodePolyfills({

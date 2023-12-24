@@ -7,5 +7,5 @@
   />
 </template>
 <script lang="ts" setup>
-  import projects from "assets/projects.json"
+  const projects = await fetchApi<IProjects>("projects")
 </script>

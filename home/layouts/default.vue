@@ -15,7 +15,7 @@
           <v-btn icon="mdi-dots-vertical" v-bind="props"></v-btn>
         </template>
         <v-card class="rounded-lg">
-          <v-list v-if="socials">
+          <v-list>
             <v-list-subheader>Socials</v-list-subheader>
             <v-list-item v-for="social in socials" :href="social.url" target="_blank">
               <template #prepend>
@@ -24,8 +24,8 @@
               <v-list-item-title>{{ social.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
-          <v-divider v-if="socials"/>
-          <v-list v-if="projects">
+          <v-divider />
+          <v-list>
             <v-list-subheader>Projects</v-list-subheader>
             <v-list-item
               v-for="project in projects"
@@ -46,6 +46,9 @@
   </v-app>
 </template>
 <script lang="ts" setup>
+  import socials from "assets/socials.json"
+  import projects from "assets/projects.json"
+
   useHead({
     templateParams: {
       separator: "¦",
@@ -74,7 +77,4 @@
     twitterCard: "summary_large_image",
     ogUrl: "https://jhondesignee.netlify.app"
   })
-
-  const socials = await fetchApi<ISocials>("socials")
-  const projects = await fetchApi<IProjects>("projects")
 </script>

@@ -4,6 +4,7 @@ import type { ThemeDefinition } from "vuetify"
 import colors from "vuetify/lib/util/colors"
 import { aliases, mdi } from "vuetify/iconsets/mdi"
 import { nodePolyfills } from "vite-plugin-node-polyfills"
+import mongoose from "mongoose"
 
 const purpleDarkTheme: ThemeDefinition = {
   dark: true,
@@ -34,6 +35,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   runtimeConfig: {
     mongodbUri: process.env.MONGODB_URI
+  },
+  hooks: {
+    close: () => {
+      mongoose.disconnect()
+    }
   },
   vite: {
     plugins: [

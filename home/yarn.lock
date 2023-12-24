@@ -4251,9 +4251,9 @@ node-addon-api@^7.0.0:
   integrity sha512-vgbBJTS4m5/KkE16t5Ly0WW9hz46swAstv0hYYwMtbG7AznRhNyfLRe8HZAiWIpcHzoO7HxhLuBQj9rJ/Ho0ZA==
 
 node-fetch-native@^1.4.0, node-fetch-native@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/node-fetch-native/-/node-fetch-native-1.4.1.tgz#5a336e55b4e1b1e72b9927da09fecd2b374c9be5"
-  integrity sha512-NsXBU0UgBxo2rQLOeWNZqS3fvflWePMECr8CoSWoSTqCqGbVVsvl9vZu1HfQicYN0g5piV9Gh8RTEvo/uP752w==
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/node-fetch-native/-/node-fetch-native-1.5.1.tgz#bb74ccabaefb698d6c54cd0153e0f5a5db2ff1c6"
+  integrity sha512-KNVu95aIrNzw7v1aKyVv/nC2kHUqNzgBnFuMTemhHnk7djEMtLjaJSDCB8h2VVgKL5s+NAcvBlZ2OIHLP0RC/Q==
 
 node-fetch@^2.6.7:
   version "2.7.0"

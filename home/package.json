@@ -27,7 +27,6 @@
   "dependencies": {
     "@vercel/kv": "^1.0.1",
     "countries-list": "^3.0.6",
-    "libphonenumber-js": "^1.10.51",
-    "maska": "^2.1.10"
+    "libphonenumber-js": "^1.10.51"
   }
 }

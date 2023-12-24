@@ -4,8 +4,8 @@ declare interface ISocials {
   url: string
 }
 
- declare interface IProjects {
-   title: string 
-   description: string 
-   path: string  
- }
+declare interface IProjects {
+  title: string
+  description: string
+  path: string
+}

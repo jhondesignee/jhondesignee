@@ -2,7 +2,7 @@
 
 <p align="center">
   😃 Jhonata <br>
-  🎉 18 yo <br>
+  🎉 19 yo <br>
   👨‍💻 Web developer <br>
   🇧🇷 Brasileiro 
 </p>
